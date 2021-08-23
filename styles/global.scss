@@ -1,0 +1,82 @@
+$mainColor: #8d94ba;
+$secondaryColor: #87677b;
+$error: #ff2626;
+$borderRadius: 6px;
+
+nav {
+  list-style: none;
+  margin: 15px 0 30px 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  li {
+    font-size: 18px;
+    margin: 0 10px;
+    a {
+      text-decoration: none;
+      color: $mainColor;
+    }
+  }
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.input-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  label {
+    color: $mainColor;
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  input {
+    border: 1px solid $secondaryColor;
+    width: 200px;
+    height: 30px;
+    border-radius: $borderRadius;
+    padding: 5px 15px;
+    color: $mainColor;
+    &::placeholder {
+      color: $secondaryColor;
+    }
+  }
+}
+.btn {
+  background: $mainColor;
+  border: none;
+  outline: none;
+  padding: 12px 20px;
+  border-radius: $borderRadius;
+  color: white;
+  cursor: pointer;
+}
+.uploadSuccess {
+  color: $secondaryColor;
+  margin: 15px 0;
+}
+.error {
+  color: $error;
+  font-size: 14px;
+}
+.mb-10 {
+  margin-bottom: 10px;
+}
+.welcome {
+  color: $secondaryColor;
+}
+.upload {
+  margin-bottom: 5px;
+  margin-top: 15px;
+  color: $secondaryColor;
+}
