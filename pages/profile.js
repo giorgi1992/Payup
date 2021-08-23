@@ -47,15 +47,10 @@ const Profile = () => {
     return (
         <div className="container">
             <div>
-                <img src={
-                    createObjectURL ? createObjectURL : 
-                    avatar ? avatar : 
-                    'https://www.irishrsa.ie/wp-content/uploads/2017/03/default-avatar.png'
-                    } 
+                <img src={createObjectURL ? createObjectURL : avatar ? avatar : 'https://www.irishrsa.ie/wp-content/uploads/2017/03/default-avatar.png'} 
                     width={60} 
                     height={60} 
-                    alt="avatar" 
-                    title="avatar" />
+                    alt="default avatar" title="avatar" />
                 <h4 className="upload">Upload Image</h4>
                 <input type="file" name="myImage" onChange={uploadToClient} />
                 <button className="btn btn-primary" type="submit" onClick={uploadToServer}>Upload</button>
